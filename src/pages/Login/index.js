@@ -35,6 +35,7 @@ export default function Login() {
 
     <TextInput
     placeholder='Senha'
+    secureTextEntry
     autoCorrect={false}
     style={estilo.input}
     />

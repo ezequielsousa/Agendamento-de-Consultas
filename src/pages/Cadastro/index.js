@@ -43,12 +43,14 @@ export default function Cadastro() {
 
     <TextInput
     placeholder='Senha'
+    secureTextEntry
     autoCorrect={false}
     style={estilo.input}
     />
 
     <TextInput
     placeholder='Confirmar senha'
+    secureTextEntry
     autoCorrect={false}
     style={estilo.input}
     />
