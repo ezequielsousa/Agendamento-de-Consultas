@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { save } from '../../services';
 
 
 export default function Cadastro() {
@@ -58,7 +59,7 @@ export default function Cadastro() {
     <Image source={require('../../assets/images/lock.png')} 
     style={{position: 'absolute', left: '75%', top: '63%'}}/>
 
-    <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Home')}>
+    <TouchableOpacity style={estilo.botao} onPress={save}>
         <Text style={{color: '#FFF', fontWeight: 'bold'}}>Cadastrar</Text>
     </TouchableOpacity>
 
